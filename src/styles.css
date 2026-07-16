@@ -190,3 +190,26 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+
+@keyframes gradient-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(4%, -3%, 0) scale(1.05); }
+  66% { transform: translate3d(-3%, 3%, 0) scale(0.98); }
+}
+
+@utility animated-gradient {
+  position: relative;
+  isolation: isolate;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    z-index: -1;
+    background:
+      radial-gradient(40% 40% at 20% 30%, color-mix(in oklab, var(--cyber) 45%, transparent) 0%, transparent 65%),
+      radial-gradient(35% 35% at 80% 20%, color-mix(in oklab, var(--violet) 40%, transparent) 0%, transparent 70%),
+      radial-gradient(45% 45% at 60% 80%, color-mix(in oklab, var(--cyber-glow) 30%, transparent) 0%, transparent 70%);
+    filter: blur(30px);
+    animation: gradient-drift 18s ease-in-out infinite;
+  }
+}
