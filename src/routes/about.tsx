@@ -98,34 +98,9 @@ const footerLinks = ["Home", "Portfolio", "About", "Careers", "Insights", "Conta
 function AboutPage() {
   return (
     <div className="min-h-screen bg-obsidian text-foreground font-sans overflow-x-hidden">
-      {/* NAV */}
-      <nav className="glass-strong sticky top-0 z-50 flex items-center justify-between px-6 md:px-10 h-16">
-        <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <div className="size-7 rounded-md" style={{ background: "var(--gradient-brand)" }} aria-hidden />
-          <span className="font-display text-lg font-bold tracking-tight">Riolabz</span>
-        </Link>
-        <div className="hidden lg:flex items-center gap-9 text-sm font-medium text-white/60">
-          {nav.map((n) => (
-            <Link
-              key={n.label}
-              to={n.to}
-              hash={n.hash}
-              className="hover:text-white transition-colors [&.active]:text-white"
-              activeOptions={{ exact: true }}
-            >
-              {n.label}
-            </Link>
-          ))}
-        </div>
-        <Link
-          to="/"
-          hash="contact"
-          className="group inline-flex items-center gap-1.5 px-4 py-2 bg-white text-obsidian text-sm font-semibold rounded-full hover:bg-cyber hover:text-white transition-all duration-300"
-        >
-          Start Your Project
-          <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-        </Link>
-      </nav>
+      <SiteHeader />
+
+
 
       {/* HERO */}
       <header className="relative pt-24 md:pt-32 pb-24 md:pb-40 px-6 md:px-10 overflow-hidden animated-gradient">
