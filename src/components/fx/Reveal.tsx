@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode, type ElementType } from "react";
 
 /**
  * IntersectionObserver-driven fade-up reveal.
@@ -12,11 +12,12 @@ export function Reveal({
   y = 24,
 }: {
   children: ReactNode;
-  as?: keyof JSX.IntrinsicElements;
+  as?: ElementType;
   className?: string;
   delay?: number;
   y?: number;
 }) {
+
   const ref = useRef<HTMLElement | null>(null);
   const [shown, setShown] = useState(false);
 
