@@ -94,7 +94,7 @@ export function SiteHeader() {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden ml-auto mr-4 self-center size-10 rounded-full grid place-items-center text-slate-700 hover:bg-slate-100"
+          className="lg:hidden ml-auto mr-4 self-center size-11 rounded-full grid place-items-center text-slate-700 hover:bg-slate-100"
           aria-label="Toggle menu"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
