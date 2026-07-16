@@ -77,19 +77,46 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Riolabz Technologies — Global Software Engineering" },
+      {
+        name: "description",
+        content:
+          "Riolabz Technologies engineers scalable web, mobile, cloud and custom software for startups and enterprises across India, the UK and USA.",
+      },
+      { name: "author", content: "Riolabz Technologies" },
+      { property: "og:title", content: "Riolabz Technologies — Global Software Engineering" },
+      {
+        property: "og:description",
+        content:
+          "Premium software development for high-growth startups and global enterprises. Web, mobile, cloud, UI/UX and dedicated engineering teams.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Riolabz Technologies" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Riolabz Technologies — Global Software Engineering" },
+      {
+        name: "twitter:description",
+        content:
+          "Premium software development across India, the UK and USA. Scalable web, mobile, cloud and custom software.",
+      },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@600;700;800&display=swap",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
