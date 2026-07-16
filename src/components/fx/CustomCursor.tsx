@@ -10,7 +10,13 @@ export function CustomCursor() {
 
   useEffect(() => {
     if (!enabled) return;
-    let dx = 0, dy = 0, rx = 0, ry = 0, tx = 0, ty = 0;
+    document.documentElement.classList.add("has-custom-cursor");
+    return () => document.documentElement.classList.remove("has-custom-cursor");
+  }, [enabled]);
+
+  useEffect(() => {
+    if (!enabled) return;
+
     let raf = 0;
 
     const move = (e: MouseEvent) => {

@@ -270,9 +270,9 @@
 }
 
 /* Hide the native cursor when custom cursor is active */
-@media (hover: hover) and (pointer: fine) {
-  html:not(.no-custom-cursor), html:not(.no-custom-cursor) * { cursor: none !important; }
-}
+html.has-custom-cursor,
+html.has-custom-cursor * { cursor: none !important; }
+
 
 /* Underline reveal micro-interaction */
 @utility story-link {
