@@ -1,5 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
+import { Spotlight } from "@/components/fx/Spotlight";
+import { FloatingBlobs } from "@/components/fx/FloatingBlobs";
+import { Magnetic } from "@/components/fx/Magnetic";
+import { Tilt } from "@/components/fx/Tilt";
+import { Reveal } from "@/components/fx/Reveal";
+
 
 import heroImage from "@/assets/hero-infrastructure.jpg";
 import portfolioHealthcare from "@/assets/portfolio-healthcare.jpg";
@@ -120,11 +126,13 @@ function Index() {
 
 
       {/* HERO */}
+      <Spotlight size={700}>
       <header id="top" className="relative pt-14 md:pt-20 lg:pt-28 pb-16 md:pb-24 lg:pb-32 px-5 sm:px-6 md:px-10 overflow-hidden animated-gradient">
+        <FloatingBlobs />
         <div className="pointer-events-none absolute inset-0 -z-10 grid-bg" aria-hidden />
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           <div className="lg:col-span-6">
-            <div className="glass inline-flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full text-xs font-medium text-white/80 mb-8 animate-fade-up">
+            <Reveal className="glass inline-flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full text-xs font-medium text-white/80 mb-8">
               <span className="relative flex size-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber opacity-75" />
                 <span className="relative inline-flex rounded-full size-2 bg-cyber" />
@@ -132,67 +140,67 @@ function Index() {
               Global digital engineering
               <span className="text-white/30">·</span>
               <span className="text-white/50">India · UK · USA</span>
-            </div>
-            <h1
-              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[0.95] tracking-tighter animate-fade-up"
-              style={{ animationDelay: "80ms" }}
+            </Reveal>
+            <Reveal as="h1" delay={80}
+              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[0.95] tracking-tighter"
             >
               <span className="gradient-text">Digital products for </span>
               <span className="gradient-text-brand">modern businesses.</span>
-            </h1>
-            <p
-              className="text-lg text-white/60 leading-relaxed max-w-xl mt-8 animate-fade-up"
-              style={{ animationDelay: "160ms" }}
+            </Reveal>
+            <Reveal as="p" delay={160}
+              className="text-lg text-white/60 leading-relaxed max-w-xl mt-8"
             >
               Riolabz Technologies designs and engineers scalable web, mobile
               and cloud products for ambitious teams — from a first prototype
               to a system serving millions.
-            </p>
-            <div
-              className="flex flex-wrap gap-3 mt-10 animate-fade-up"
-              style={{ animationDelay: "240ms" }}
-            >
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: "var(--gradient-brand)", boxShadow: "var(--shadow-glow)" }}
-              >
-                Start Your Project
-                <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-              </a>
-              <a
-                href="#portfolio"
-                className="glass inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full text-white/90 hover:text-white transition-colors"
-              >
-                View our work
-              </a>
-            </div>
+            </Reveal>
+            <Reveal delay={240} className="flex flex-wrap gap-3 mt-10">
+              <Magnetic>
+                <a
+                  href="#contact"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full text-white transition-shadow duration-300 hover:shadow-[0_0_60px_-10px_var(--cyber-glow)]"
+                  style={{ background: "var(--gradient-brand)", boxShadow: "var(--shadow-glow)" }}
+                >
+                  Start Your Project
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                </a>
+              </Magnetic>
+              <Magnetic strength={0.2}>
+                <a
+                  href="#portfolio"
+                  className="glass inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full text-white/90 hover:text-white transition-colors"
+                >
+                  View our work
+                </a>
+              </Magnetic>
+            </Reveal>
           </div>
 
-          <div
-            className="lg:col-span-6 animate-fade-up"
-            style={{ animationDelay: "320ms" }}
-          >
-            <div
-              className="relative rounded-3xl overflow-hidden card-elevated"
-              style={{ boxShadow: "var(--shadow-card)" }}
-            >
-              <img
-                src={heroImage}
-                alt="Futuristic visualization of Riolabz cloud, data and application infrastructure"
-                width={1600}
-                height={912}
-                className="w-full aspect-[4/3] lg:aspect-[5/4] object-cover"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-white/70">
-                <span>System · online</span>
-                <span>uptime 99.98%</span>
+          <Reveal delay={320} className="lg:col-span-6">
+            <Tilt max={6} className="rounded-3xl">
+              <div
+                className="relative rounded-3xl overflow-hidden card-elevated"
+                style={{ boxShadow: "var(--shadow-card)" }}
+              >
+                <img
+                  src={heroImage}
+                  alt="Futuristic visualization of Riolabz cloud, data and application infrastructure"
+                  width={1600}
+                  height={912}
+                  className="w-full aspect-[4/3] lg:aspect-[5/4] object-cover"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-white/70">
+                  <span>System · online</span>
+                  <span>uptime 99.98%</span>
+                </div>
               </div>
-            </div>
-          </div>
+            </Tilt>
+          </Reveal>
         </div>
       </header>
+      </Spotlight>
+
 
       {/* STATS */}
       <section className="px-5 sm:px-6 md:px-10 -mt-4 md:-mt-8 relative z-10">
@@ -229,33 +237,34 @@ function Index() {
             {services.map((s, i) => {
               const Icon = s.icon;
               return (
-                <article
-                  key={s.title}
-                  className="card-elevated card-elevated-hover group relative rounded-2xl p-7 overflow-hidden animate-fade-up"
-                  style={{ animationDelay: `${i * 60}ms` }}
-                >
-                  <div
-                    className="pointer-events-none absolute -top-24 -right-24 size-56 rounded-full opacity-0 group-hover:opacity-100 blur-3xl transition-opacity duration-500"
-                    style={{ background: "var(--gradient-brand)" }}
-                  />
-                  <div className="relative">
-                    <div className="flex items-center justify-between mb-7">
-                      <div className="size-11 rounded-xl grid place-items-center glass">
-                        <Icon className="size-5 text-cyber" strokeWidth={1.5} />
+                <Reveal key={s.title} delay={i * 80}>
+                  <Tilt max={6} className="rounded-2xl h-full">
+                    <article className="card-elevated card-elevated-hover group relative rounded-2xl p-7 overflow-hidden h-full">
+                      <div
+                        className="pointer-events-none absolute -top-24 -right-24 size-56 rounded-full opacity-0 group-hover:opacity-100 blur-3xl transition-opacity duration-500"
+                        style={{ background: "var(--gradient-brand)" }}
+                      />
+                      <div className="relative">
+                        <div className="flex items-center justify-between mb-7">
+                          <div className="size-11 rounded-xl grid place-items-center glass">
+                            <Icon className="size-5 text-cyber" strokeWidth={1.5} />
+                          </div>
+                          <span className="font-mono text-[11px] text-white/30">{s.n}</span>
+                        </div>
+                        <h3 className="text-lg font-semibold mb-2.5 leading-snug tracking-tight">{s.title}</h3>
+                        <p className="text-white/50 leading-relaxed text-sm">{s.desc}</p>
+                        <div className="mt-6 inline-flex items-center gap-1 text-xs font-medium text-white/40 group-hover:text-cyber transition-colors">
+                          Learn more
+                          <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                        </div>
                       </div>
-                      <span className="font-mono text-[11px] text-white/30">{s.n}</span>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2.5 leading-snug tracking-tight">{s.title}</h3>
-                    <p className="text-white/50 leading-relaxed text-sm">{s.desc}</p>
-                    <div className="mt-6 inline-flex items-center gap-1 text-xs font-medium text-white/40 group-hover:text-cyber transition-colors">
-                      Learn more
-                      <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </div>
-                  </div>
-                </article>
+                    </article>
+                  </Tilt>
+                </Reveal>
               );
             })}
           </div>
+
         </div>
       </section>
 
