@@ -1,4 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/SiteHeader";
+
 import heroImage from "@/assets/hero-infrastructure.jpg";
 import portfolioHealthcare from "@/assets/portfolio-healthcare.jpg";
 import portfolioEcommerce from "@/assets/portfolio-ecommerce.jpg";
@@ -114,27 +116,8 @@ const footerLinks = ["Home", "Portfolio", "About", "Careers", "Insights", "Conta
 function Index() {
   return (
     <div className="min-h-screen bg-obsidian text-foreground font-sans overflow-x-hidden">
-      {/* NAV */}
-      <nav className="glass-strong sticky top-0 z-50 flex items-center justify-between px-6 md:px-10 h-16">
-        <a href="#top" className="flex items-center gap-2.5 shrink-0">
-          <div className="size-7 rounded-md" style={{ background: "var(--gradient-brand)" }} aria-hidden />
-          <span className="font-display text-lg font-bold tracking-tight">Riolabz</span>
-        </a>
-        <div className="hidden lg:flex items-center gap-9 text-sm font-medium text-white/60">
-          {nav.map((n) => (
-            <a key={n.label} href={n.href} className="hover:text-white transition-colors">
-              {n.label}
-            </a>
-          ))}
-        </div>
-        <a
-          href="#contact"
-          className="group inline-flex items-center gap-1.5 px-4 py-2 bg-white text-obsidian text-sm font-semibold rounded-full hover:bg-cyber hover:text-white transition-all duration-300"
-        >
-          Start Your Project
-          <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-        </a>
-      </nav>
+      <SiteHeader />
+
 
       {/* HERO */}
       <header id="top" className="relative pt-20 md:pt-28 pb-24 md:pb-32 px-6 md:px-10 overflow-hidden animated-gradient">
