@@ -3,7 +3,7 @@ import { Linkedin, Twitter, Github, Instagram, Mail, MapPin, Phone } from "lucid
 
 export function SiteFooter() {
   return (
-    <footer className="bg-obsidian text-foreground px-6 md:px-10 pt-20 pb-10 border-t border-white/5">
+    <footer className="bg-obsidian text-foreground px-5 sm:px-6 md:px-10 pt-20 pb-10 border-t border-white/5">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
         <div className="col-span-2">
           <Link to="/" className="flex items-center gap-2.5 mb-6">

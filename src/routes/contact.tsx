@@ -26,11 +26,11 @@ function ContactPage() {
   return (
     <div className="min-h-screen bg-obsidian text-foreground font-sans overflow-x-hidden">
       <SiteHeader />
-      <section className="relative pt-20 md:pt-28 pb-16 px-6 md:px-10 overflow-hidden animated-gradient">
+      <section className="relative pt-14 md:pt-20 lg:pt-28 pb-16 px-5 sm:px-6 md:px-10 overflow-hidden animated-gradient">
         <div className="pointer-events-none absolute inset-0 -z-10 grid-bg" aria-hidden />
         <div className="max-w-7xl mx-auto">
           <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">Contact</div>
-          <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] max-w-4xl">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] max-w-4xl">
             Let's talk about <span className="gradient-text-brand">your product</span>.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-white/60 leading-relaxed">
@@ -39,7 +39,7 @@ function ContactPage() {
           </p>
         </div>
       </section>
-      <section className="px-6 md:px-10 py-16 md:py-24 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] gap-12">
           {/* Form */}
           <form onSubmit={(e) => e.preventDefault()} className="card-elevated rounded-3xl p-8 md:p-12 space-y-5">

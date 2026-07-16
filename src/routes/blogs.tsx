@@ -29,11 +29,11 @@ function BlogsPage() {
   return (
     <div className="min-h-screen bg-obsidian text-foreground font-sans overflow-x-hidden">
       <SiteHeader />
-      <section className="relative pt-20 md:pt-28 pb-16 px-6 md:px-10 overflow-hidden animated-gradient">
+      <section className="relative pt-14 md:pt-20 lg:pt-28 pb-16 px-5 sm:px-6 md:px-10 overflow-hidden animated-gradient">
         <div className="pointer-events-none absolute inset-0 -z-10 grid-bg" aria-hidden />
         <div className="max-w-7xl mx-auto">
           <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">Insights</div>
-          <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] max-w-4xl">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] max-w-4xl">
             Notes from the <span className="gradient-text-brand">engineering room</span>.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-white/60 leading-relaxed">
@@ -41,7 +41,7 @@ function BlogsPage() {
           </p>
         </div>
       </section>
-      <section className="px-6 md:px-10 py-16 md:py-24 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map((p) => (
             <a key={p.title} href="#" className="card-elevated card-elevated-hover rounded-2xl p-8 group flex flex-col">
