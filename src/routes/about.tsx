@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import aboutHero from "@/assets/about-hero.jpg";
 import aboutGlobe from "@/assets/about-globe.jpg";
+
 import {
   ArrowRight,
   ArrowUpRight,
