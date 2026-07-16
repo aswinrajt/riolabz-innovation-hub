@@ -134,17 +134,17 @@ function ServicesPage() {
       <SiteHeader />
 
       {/* HERO */}
-      <section className="relative pt-20 md:pt-28 pb-24 md:pb-32 px-6 md:px-10 overflow-hidden animated-gradient">
+      <section className="relative pt-14 md:pt-20 lg:pt-28 pb-16 md:pb-24 lg:pb-32 px-5 sm:px-6 md:px-10 overflow-hidden animated-gradient">
         <div className="pointer-events-none absolute inset-0 -z-10 grid-bg" aria-hidden />
         <div className="max-w-7xl mx-auto">
           <div className="glass inline-flex items-center gap-2 pl-2 pr-4 py-1.5 rounded-full text-xs font-medium text-white/80 mb-8 animate-fade-up">
             <span className="size-2 rounded-full bg-cyber" />
             What we do
           </div>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.95] max-w-5xl animate-fade-up">
+          <h1 className="font-display text-4xl sm:text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.95] max-w-5xl animate-fade-up">
             Services engineered for <span className="gradient-text-brand">ambitious teams</span>.
           </h1>
-          <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/60 leading-relaxed animate-fade-up" style={{ animationDelay: "150ms" }}>
+          <p className="mt-8 max-w-2xl text-base md:text-lg lg:text-xl text-white/60 leading-relaxed animate-fade-up" style={{ animationDelay: "150ms" }}>
             Eight disciplines. One integrated studio. From first prototype to production-scale
             platform — Riolabz partners with you across the entire product lifecycle.
           </p>
@@ -160,7 +160,7 @@ function ServicesPage() {
       </section>
 
       {/* CATEGORIES */}
-      <section className="px-6 md:px-10 py-16 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
           {categories.map((c) => (
             <div key={c.label} className="glass rounded-2xl p-6 flex items-center justify-between group hover:bg-white/5 transition-colors">
@@ -179,11 +179,11 @@ function ServicesPage() {
       </section>
 
       {/* DETAILED SERVICE CARDS */}
-      <section id="services" className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section id="services" className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-16">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">01 — Services</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               Eight ways we <span className="gradient-text">ship product</span> with you.
             </h2>
           </div>
@@ -218,12 +218,12 @@ function ServicesPage() {
       </section>
 
       {/* TECH STACK */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
             <div className="max-w-2xl">
               <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">02 — Technology Stack</div>
-              <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
                 Built on <span className="gradient-text-brand">modern foundations</span>.
               </h2>
             </div>
@@ -250,11 +250,11 @@ function ServicesPage() {
       </section>
 
       {/* INDUSTRIES */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-16">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">03 — Industries</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               Industry expertise, <span className="gradient-text">delivered globally</span>.
             </h2>
           </div>
@@ -272,11 +272,11 @@ function ServicesPage() {
       </section>
 
       {/* BENEFITS */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-16">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">04 — Benefits</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               Why teams pick <span className="gradient-text-brand">Riolabz</span>.
             </h2>
           </div>
@@ -293,11 +293,11 @@ function ServicesPage() {
       </section>
 
       {/* WORKFLOW */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-20">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">05 — Development Workflow</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               Six phases, <span className="gradient-text">zero surprises</span>.
             </h2>
           </div>
@@ -319,11 +319,11 @@ function ServicesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-4xl mx-auto">
           <div className="mb-16 text-center">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">06 — FAQ</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               Common <span className="gradient-text-brand">questions</span>.
             </h2>
           </div>
@@ -334,15 +334,15 @@ function ServicesPage() {
       </section>
 
       {/* CONTACT BANNER */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-6xl mx-auto">
-          <div className="relative rounded-3xl overflow-hidden p-12 md:p-20 card-elevated"
+          <div className="relative rounded-3xl overflow-hidden p-8 sm:p-12 md:p-20 card-elevated"
                style={{ background: "var(--gradient-brand)" }}>
             <div className="absolute inset-0 grid-bg opacity-20" />
             <div className="absolute -top-32 -right-32 size-96 rounded-full bg-cyber/40 blur-3xl" />
             <div className="relative grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_auto] items-center gap-8">
               <div>
-                <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.02] text-white">
+                <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.02] text-white">
                   Ready to build something remarkable?
                 </h2>
                 <p className="mt-6 text-lg text-white/80 max-w-xl">

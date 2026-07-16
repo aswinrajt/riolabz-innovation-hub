@@ -120,7 +120,7 @@ function Index() {
 
 
       {/* HERO */}
-      <header id="top" className="relative pt-20 md:pt-28 pb-24 md:pb-32 px-6 md:px-10 overflow-hidden animated-gradient">
+      <header id="top" className="relative pt-14 md:pt-20 lg:pt-28 pb-16 md:pb-24 lg:pb-32 px-5 sm:px-6 md:px-10 overflow-hidden animated-gradient">
         <div className="pointer-events-none absolute inset-0 -z-10 grid-bg" aria-hidden />
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           <div className="lg:col-span-6">
@@ -134,7 +134,7 @@ function Index() {
               <span className="text-white/50">India · UK · USA</span>
             </div>
             <h1
-              className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[0.95] tracking-tighter animate-fade-up"
+              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[0.95] tracking-tighter animate-fade-up"
               style={{ animationDelay: "80ms" }}
             >
               <span className="gradient-text">Digital products for </span>
@@ -195,7 +195,7 @@ function Index() {
       </header>
 
       {/* STATS */}
-      <section className="px-6 md:px-10 -mt-4 md:-mt-8 relative z-10">
+      <section className="px-5 sm:px-6 md:px-10 -mt-4 md:-mt-8 relative z-10">
         <div className="max-w-7xl mx-auto glass rounded-3xl p-6 md:p-10 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
           {stats.map((s) => (
             <div key={s.label} className="min-w-0">
@@ -209,12 +209,12 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-24 md:py-32 px-6 md:px-10">
+      <section id="services" className="py-16 md:py-24 lg:py-32 px-5 sm:px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 md:mb-20 gap-6">
             <div className="max-w-2xl">
               <span className="text-cyber font-mono text-[11px] uppercase tracking-[0.24em]">/ 01 Services</span>
-              <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-4 gradient-text">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mt-4 gradient-text">
                 Seven disciplines. <br />
                 One engineering practice.
               </h2>
@@ -262,7 +262,7 @@ function Index() {
       {/* WHY CHOOSE — ABOUT */}
       <section
         id="about"
-        className="relative py-24 md:py-32 px-6 md:px-10 border-y border-border overflow-hidden"
+        className="relative py-16 md:py-24 lg:py-32 px-5 sm:px-6 md:px-10 border-y border-border overflow-hidden"
       >
         <div
           className="pointer-events-none absolute inset-0 -z-10 opacity-60"
@@ -274,7 +274,7 @@ function Index() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-14">
           <div className="lg:col-span-5">
             <span className="text-cyber font-mono text-[11px] uppercase tracking-[0.24em]">/ 02 Why Riolabz</span>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-4 leading-[1.02]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mt-4 leading-[1.02]">
               <span className="gradient-text">Engineering that </span>
               <span className="gradient-text-brand">compounds.</span>
             </h2>
@@ -302,12 +302,12 @@ function Index() {
       </section>
 
       {/* PORTFOLIO */}
-      <section id="portfolio" className="py-24 md:py-32 px-6 md:px-10">
+      <section id="portfolio" className="py-16 md:py-24 lg:py-32 px-5 sm:px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 md:mb-20 gap-6">
             <div className="max-w-2xl">
               <span className="text-cyber font-mono text-[11px] uppercase tracking-[0.24em]">/ 03 Portfolio</span>
-              <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-4 gradient-text">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mt-4 gradient-text">
                 Products we're <br />
                 proud to have shipped.
               </h2>
@@ -356,11 +356,11 @@ function Index() {
       </section>
 
       {/* PROCESS */}
-      <section className="py-24 md:py-32 px-6 md:px-10 border-y border-border">
+      <section className="py-16 md:py-24 lg:py-32 px-5 sm:px-6 md:px-10 border-y border-border">
         <div className="max-w-7xl mx-auto">
           <div className="mb-14 md:mb-20 max-w-2xl">
             <span className="text-cyber font-mono text-[11px] uppercase tracking-[0.24em]">/ 04 Process</span>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-4 gradient-text">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mt-4 gradient-text">
               A structured path <br /> from idea to launch.
             </h2>
           </div>
@@ -404,11 +404,11 @@ function Index() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-24 md:py-32 px-6 md:px-10">
+      <section className="py-16 md:py-24 lg:py-32 px-5 sm:px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="mb-14 md:mb-20 max-w-2xl">
             <span className="text-cyber font-mono text-[11px] uppercase tracking-[0.24em]">/ 05 Voices</span>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-4 gradient-text">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mt-4 gradient-text">
               Trusted by teams <br /> that ship at scale.
             </h2>
           </div>
@@ -441,12 +441,12 @@ function Index() {
       </section>
 
       {/* INSIGHTS */}
-      <section className="py-24 md:py-32 px-6 md:px-10 border-t border-border">
+      <section className="py-16 md:py-24 lg:py-32 px-5 sm:px-6 md:px-10 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 md:mb-16 gap-6">
             <div className="max-w-2xl">
               <span className="text-cyber font-mono text-[11px] uppercase tracking-[0.24em]">/ 06 Insights</span>
-              <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight mt-4 gradient-text">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mt-4 gradient-text">
                 Notes from the <br /> engineering floor.
               </h2>
             </div>
@@ -498,10 +498,10 @@ function Index() {
       </section>
 
       {/* CONTACT CTA */}
-      <section id="contact" className="py-24 md:py-32 px-6 md:px-10">
+      <section id="contact" className="py-16 md:py-24 lg:py-32 px-5 sm:px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div
-            className="relative rounded-[2rem] p-12 md:p-20 overflow-hidden card-elevated"
+            className="relative rounded-[2rem] p-8 sm:p-12 md:p-20 overflow-hidden card-elevated"
             style={{ boxShadow: "var(--shadow-card)" }}
           >
             <div
@@ -514,7 +514,7 @@ function Index() {
             <div className="pointer-events-none absolute inset-0 -z-10 grid-bg opacity-40" aria-hidden />
             <div className="relative max-w-3xl">
               <span className="text-cyber font-mono text-[11px] uppercase tracking-[0.24em]">/ 07 Let's build</span>
-              <h2 className="font-display text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-[1.02] tracking-tight">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mt-4 mb-6 leading-[1.02] tracking-tight">
                 <span className="gradient-text">Ready to build something </span>
                 <span className="gradient-text-brand">exceptional?</span>
               </h2>
@@ -544,7 +544,7 @@ function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="pt-20 pb-10 px-6 md:px-10 border-t border-border">
+      <footer className="pt-20 pb-10 px-5 sm:px-6 md:px-10 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
             {/* Company */}

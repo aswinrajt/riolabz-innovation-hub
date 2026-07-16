@@ -106,7 +106,7 @@ function AboutPage() {
 
 
       {/* HERO */}
-      <header className="relative pt-24 md:pt-32 pb-24 md:pb-40 px-6 md:px-10 overflow-hidden animated-gradient">
+      <header className="relative pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-24 lg:pb-40 px-5 sm:px-6 md:px-10 overflow-hidden animated-gradient">
         <div className="pointer-events-none absolute inset-0 -z-10 grid-bg" aria-hidden />
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 animate-fade-up">
@@ -114,10 +114,10 @@ function AboutPage() {
               <span className="size-2 rounded-full bg-cyber" />
               About Riolabz Technologies
             </div>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.95]">
+            <h1 className="font-display text-4xl sm:text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.95]">
               We engineer the <span className="gradient-text-brand">infrastructure</span> behind ambitious ideas.
             </h1>
-            <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/60 leading-relaxed">
+            <p className="mt-8 max-w-2xl text-base md:text-lg lg:text-xl text-white/60 leading-relaxed">
               Riolabz is a global software engineering studio. For over a decade we've partnered with
               startups, SMEs and enterprises across India, the UK and the USA — building digital
               products that scale, endure and win.
@@ -136,7 +136,7 @@ function AboutPage() {
       </header>
 
       {/* COMPANY STORY */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-4">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">01 — Our Story</div>
@@ -163,9 +163,9 @@ function AboutPage() {
       </section>
 
       {/* MISSION + VISION */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="card-elevated card-elevated-hover rounded-3xl p-10 md:p-14 relative overflow-hidden group">
+          <div className="card-elevated card-elevated-hover rounded-3xl p-8 md:p-10 lg:p-14 relative overflow-hidden group">
             <div className="absolute -top-24 -right-24 size-64 rounded-full bg-cyber/20 blur-3xl group-hover:bg-cyber/30 transition-colors" />
             <Compass className="size-10 text-cyber mb-8 relative" strokeWidth={1.5} />
             <div className="text-xs uppercase tracking-[0.2em] text-white/40 font-medium mb-3 relative">Mission</div>
@@ -177,7 +177,7 @@ function AboutPage() {
               in Boston and a product lead in Bengaluru can all ship with the same quality.
             </p>
           </div>
-          <div className="card-elevated card-elevated-hover rounded-3xl p-10 md:p-14 relative overflow-hidden group">
+          <div className="card-elevated card-elevated-hover rounded-3xl p-8 md:p-10 lg:p-14 relative overflow-hidden group">
             <div className="absolute -top-24 -left-24 size-64 rounded-full bg-white/10 blur-3xl group-hover:bg-white/20 transition-colors" />
             <Telescope className="size-10 text-white mb-8 relative" strokeWidth={1.5} />
             <div className="text-xs uppercase tracking-[0.2em] text-white/40 font-medium mb-3 relative">Vision</div>
@@ -193,11 +193,11 @@ function AboutPage() {
       </section>
 
       {/* CORE VALUES */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-16">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">02 — Core Values</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               Six principles that <span className="gradient-text-brand">shape everything</span> we ship.
             </h2>
           </div>
@@ -223,11 +223,11 @@ function AboutPage() {
       </section>
 
       {/* TIMELINE */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5 relative">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5 relative">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-20">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">03 — Our Timeline</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               Twelve years of <span className="gradient-text">quietly shipping</span>.
             </h2>
           </div>
@@ -251,12 +251,12 @@ function AboutPage() {
       </section>
 
       {/* LEADERSHIP */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
             <div className="max-w-2xl">
               <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">04 — Leadership</div>
-              <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
                 The people behind the <span className="gradient-text-brand">craft</span>.
               </h2>
             </div>
@@ -284,11 +284,11 @@ function AboutPage() {
       </section>
 
       {/* GLOBAL PRESENCE */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">05 — Global Presence</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05] mb-8">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05] mb-8">
               Three continents. <span className="gradient-text">One team.</span>
             </h2>
             <p className="text-lg text-white/60 leading-relaxed mb-10">
@@ -321,11 +321,11 @@ function AboutPage() {
       </section>
 
       {/* WHY CLIENTS TRUST US */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-16">
             <div className="text-xs uppercase tracking-[0.2em] text-cyber font-medium mb-4">06 — Why Clients Trust Us</div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter leading-[1.05]">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.05]">
               The proof isn't in <span className="gradient-text-brand">the pitch</span>. It's in the ship.
             </h2>
           </div>
@@ -342,15 +342,15 @@ function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 md:px-10 py-24 md:py-32 border-t border-white/5">
+      <section className="px-5 sm:px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-white/5">
         <div className="max-w-6xl mx-auto">
-          <div className="relative rounded-3xl overflow-hidden p-12 md:p-20 text-center card-elevated"
+          <div className="relative rounded-3xl overflow-hidden p-8 sm:p-12 md:p-20 text-center card-elevated"
                style={{ background: "var(--gradient-brand)" }}>
             <div className="absolute inset-0 grid-bg opacity-20" />
             <div className="absolute -top-32 -left-32 size-96 rounded-full bg-white/10 blur-3xl" />
             <div className="absolute -bottom-32 -right-32 size-96 rounded-full bg-cyber/40 blur-3xl" />
             <div className="relative">
-              <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.02] max-w-4xl mx-auto text-white">
+              <h2 className="font-display text-3xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.02] max-w-4xl mx-auto text-white">
                 Let's build something that outlasts us.
               </h2>
               <p className="mt-8 text-lg text-white/80 max-w-xl mx-auto">
@@ -380,7 +380,7 @@ function AboutPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="px-6 md:px-10 pt-20 pb-10 border-t border-white/5">
+      <footer className="px-5 sm:px-6 md:px-10 pt-20 pb-10 border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
           <div className="col-span-2">
             <Link to="/" className="flex items-center gap-2.5 mb-6">
