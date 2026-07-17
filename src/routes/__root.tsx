@@ -11,7 +11,6 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { CustomCursor } from "@/components/fx/CustomCursor";
 import { PageTransition } from "@/components/fx/PageTransition";
 
 
@@ -149,7 +148,6 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <CustomCursor />
       <PageTransition>
         <Outlet />
       </PageTransition>
